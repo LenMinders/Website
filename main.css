@@ -113,3 +113,20 @@ nav ul li {
    display: block;
     float: left;
 }
+
+
+
+/*===================*/
+
+@font-face {
+  font-family: consolaslocal;
+  src: url(fonts/consolas/Consolas.ttf);
+}
+
+footer{
+    font-family: consolaslocal;
+    text-align: center;
+    height: 100px;
+    background-color: lightgray;
+    line-height: 100px;
+}
