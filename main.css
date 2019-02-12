@@ -5,7 +5,8 @@ body {
 }
 
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: 400px auto 400px;
   overflow: hidden;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
@@ -31,26 +32,10 @@ nav {
 }
 
 #centernavitem {
-  flex: 1;
   display: flex;
   justify-content: center;
 }
 
-#emptymainheadingoffset {
-  width: 300px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-}
-
-nav ul li {
-  float: left;
-}
 
 .navbutton {  
   color: #000;
