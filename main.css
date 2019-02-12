@@ -1,61 +1,67 @@
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0px 0px 0px 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0px 0px 0px 0px;
 }
 
 nav {
-    
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
- 
-    transition: all 0.15s linear;
+  display: flex;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: white;
+  transition: all 0.15s linear;
 }
 
 .active {
-     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-    
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+#mainheading{
+  font-family: "Times New Roman";
+  font-size: 30px;
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  margin: 10px 50px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#centernavitem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#emptymainheadingoffset {
+  width: 300px;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-    overflow: hidden;
+  overflow: hidden;
   background-color: white;
 }
 
 nav ul li {
-    /*display: inline;*/
-    float: left;
+  float: left;
 }
 
-#mainheading{
-    font-family: "Times New Roman";
-    font-size: 30px;
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    margin: 10px 50px;
-    text-decoration: none;
-    text-align: center;
-
-}
-
-.navbutton {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    margin: 10px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 25px;
-    margin-top: 18px;
-    margin-bottom: auto;
-     -webkit-transition-duration: 0.4s; /* Safari */
+.navbutton {  
+  color: #000;
+  padding: 8px 16px;
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 18px;
+  margin-bottom: auto;
+  -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.7s;
 }
 
@@ -77,41 +83,38 @@ nav ul li {
 
 
 .main {
-    background-color: ;
-    margin-top: 70px;
-    display: block;
-    
-    width: 1000px;
-    height: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: white;
+  margin-top: 70px;
+  display: block;
+  width: 1000px;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #bioblock {
-    display: block;
-    width: 1000px;
-    height: 420px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+  display: block;
+  width: 1000px;
+  height: 420px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #profilephoto {
-    
-    border-radius: 210px;
-    float:left;
-    
+  border-radius: 210px;
+  float:left;
 }
 
 #bio {
-    margin-top: 100px;
-    margin-left: 550px;
-    padding-top: 150px;
-    text-align: justify;
+  margin-top: 100px;
+  margin-left: 550px;
+  padding-top: 150px;
+  text-align: justify;
 }
 
 #interests_and_hobbies {
-   display: block;
-    float: left;
+  display: block;
+  float: left;
 }
 
 
@@ -124,9 +127,9 @@ nav ul li {
 }
 
 footer{
-    font-family: consolaslocal;
-    text-align: center;
-    height: 100px;
-    background-color: lightgray;
-    line-height: 100px;
+  font-family: consolaslocal;
+  text-align: center;
+  height: 100px;
+  background-color: lightgray;
+  line-height: 100px;
 }

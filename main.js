@@ -14,6 +14,6 @@ function elevateNavBar() {
   } else {
        
       document.getElementById("navbar").className = "";
-      
+     
   }
 }
