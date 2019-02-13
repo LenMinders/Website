@@ -70,11 +70,15 @@ nav {
 .main {
   background-color: white;
   margin-top: 70px;
-  display: block;
+  display: grid;
   width: 1000px;
   height: 1000px;
   margin-left: auto;
   margin-right: auto;
+  grid-template-columns: 420px auto;
+  grid-template-rows: 420px auto;
+  grid-template-areas:  'photo      bio'
+                        'interests  interests';
 }
 
 #bioblock {
@@ -87,19 +91,17 @@ nav {
 
 #profilephoto {
   border-radius: 210px;
-  float:left;
+  grid-area: photo;
 }
 
 #bio {
-  margin-top: 100px;
-  margin-left: 550px;
-  padding-top: 150px;
+  grid-area: bio;
   text-align: justify;
 }
 
 #interests_and_hobbies {
-  display: block;
-  float: left;
+  grid-area: interests;
+  
 }
 
 
