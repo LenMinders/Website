@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
+  
   background-attachment: fixed;
 }
 
@@ -138,4 +138,236 @@ footer{
   height: 100px;
   background-color: rgb(48, 48, 48);
   line-height: 100px;
+  width: 100%;
 }
+
+
+
+@media only screen and (max-width:1000px) {
+
+  nav {
+  
+    display: flex;
+    
+    overflow: hidden;
+    
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.15s linear;
+  }
+  
+  .active {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(48, 48, 48);
+  }
+  
+  #mainheading{
+    font-family: "Times New Roman";
+    font-size: 30px;
+    display: block;
+    color: rgb(226, 0, 226);
+    padding: 8px 16px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  #centernavitem {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .navbutton {  
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 18px;
+    margin-bottom: auto;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.7s;
+  }
+  
+  
+  
+  .navbutton:hover {
+    background-color: #5e5e5e;
+    
+  }
+  
+  
+
+  /*====================*/
+
+
+  main {
+    
+    margin-top: 70px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #bioblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profilephoto {
+    border-radius: 210px;
+    margin: 50px;
+    width: 420px;
+    height: 420px;
+  }
+
+  #bio {
+    text-align: center;
+    margin: 50px;
+    
+  }
+
+  #interests_and_hobbies {
+    grid-area: interests;
+    border-radius: 10px;
+    background-color: rgba(48, 48, 48, 0.877);
+    padding: 50px;
+    margin: 50px;
+  }
+
+
+
+  /*===================*/
+
+
+
+  
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:700px) {
+
+  nav {
+  
+    /*display: grid;
+    grid-template-areas:  'mainheading mainheading'
+                          'centernavitem'*/
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    margin: 0px;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.15s linear;
+  }
+  
+  .active {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(48, 48, 48);
+  }
+  
+  #mainheading{
+    font-family: "Times New Roman";
+    font-size: 30px;
+    display: block;
+    color: rgb(226, 0, 226);
+    padding: 8px 16px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  #centernavitem {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .navbutton {  
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.7s;
+  }
+  
+  
+  
+  .navbutton:hover {
+    background-color: #5e5e5e;
+    
+  }
+  
+  
+
+  /*====================*/
+
+ 
+
+  main {
+    margin-top: 70px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #bioblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profilephoto {
+    border-radius: 210px;
+    margin: 50px;
+    width: 60%;
+    height: 60%;
+  }
+
+  #bio {
+    text-align: center;
+    margin: 50px;
+    
+  }
+
+  #interests_and_hobbies {
+    grid-area: interests;
+    border-radius: 0px;
+    background-color: rgba(48, 48, 48, 0.877);
+    padding: 50px;
+    margin: 50px 0px;
+  }
+
+
+
+  /*===================*/
+
+
+
+  
+}
+
+
